@@ -1,5 +1,7 @@
 # 급식들 AI
 
+> **이 코드는 [Geupsikdeul/BE](https://github.com/Geupsikdeul/BE)의 `app/ai/`로 통합되었습니다.** 서비스에서 쓰는 버전은 BE 쪽이며, 관리자 JWT 인증(`/api/v1/admin/ai/*`)과 실제 DB(희망 메뉴·알레르기·급식 일정)를 사용합니다. 프롬프트·점수 로직을 고칠 때는 BE의 `app/ai/`를 수정해 주세요. 이 폴더는 데모(`Geupsikdeul/main`)용 원본으로 남겨 둡니다.
+
 희망 메뉴 분석, 투표 후보 선정, 새 메뉴 추천, 식단 초안 생성 함수를 제공합니다. 기본 모델은 `claude-haiku-5-5`이고 `AI_MODEL`로 바꿀 수 있습니다.
 
 이 저장소는 [급식들 본체](https://github.com/Geupsikdeul/main)의 AI 코드입니다. `router.py`, `catalog.py`, 테스트는 본체의 `app` 패키지를 사용하므로 본체의 `future/ai/` 위치에 넣어 실행합니다.
